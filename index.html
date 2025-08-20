@@ -63,9 +63,9 @@
                         <h2>Player <span id="your-sum" class="fw-bold text-success" aria-live="polite"></span></h2>
                     </div>
 
-                    <div id="your-cards" class="d-flex flex-wrap gap-2 justify-content-center" aria-label="Player cards">
-                        <p>player cards go here</p>
-                    </div>
+                <div id="your-cards" class="d-flex flex-wrap gap-2 justify-content-center" aria-label="Player cards">
+                    <p class="m-0">player cards go here</p>
+                </div>
 
                 </section>
 
@@ -105,9 +105,35 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>
-                            Add rules here
-                        </p>
+                        <h4>Object of the Game</h4>
+                        <p>The aim of Blackjack is get a hand total as close to 21 as possible, without going over 21, and for your hand total to be more than the dealer's hand.</p>
+                        <p>When the game starts, you and the dealer will each be dealt 2 cards.</p>
+                        <p>You always go first, and the dealer goes second.</p>
+
+                        <h4>Card values</h4>
+                        <p>Cards 2-10 are worth their face value.</p>
+                        <p>Picture cards are worth 10 points.</p>
+                        <p>An Ace is worth either 1 or 11 points.</p>
+
+                        <h4>Hit</h4>
+                        <p>If your total is less than 21 and you want to receive another card, click Hit (or press the "H" key on your keyboard). You will receive another card, and your hand total will be updated.</p>
+                        <p>You can hit as many times as you want, but remember, you lose if your hand total goes over 21.</p>
+
+                        <h4>Stay</h4>
+                        <p>If you do not want to receive another card, click Stay (or press the "S" key on your keyboard). It is then the dealer's turn.</p>
+
+                        <h4>Dealer's turn</h4>
+                        <p>The dealer will automatically deal itself more cards until it reaches a total of 17 or more.</p>
+
+                        <h4>Winner</h4>
+                        <p>If your hand total is greater than the dealer's total, you win the game and score 1 point.</p>
+                        <p>If the dealer's hand total is greater than yours, or the scores are tied, the dealer wins and scores 1 point.</p>
+
+                        <h4>Reset</h4>
+                        <p>If you want to play again, or restart the game, click Reset (or press the "R" key on your keyboard).</p>
+
+                        <h4>Reset scores</h4>
+                        <p>If you want to reset the scores, click Reset Score.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary modalbtncustom" data-bs-dismiss="modal">Close</button>
