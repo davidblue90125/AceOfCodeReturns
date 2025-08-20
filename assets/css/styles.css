@@ -1,3 +1,6 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Kavoon&family=Mogra&family=Oleo+Script&display=swap");
+
 html, body {
    height: 100%;
    margin: 0;
@@ -8,14 +11,14 @@ body {
    min-height: 100vh;
    display: flex;
    flex-direction: column;
+   background: #569c61;
+   background: radial-gradient(circle, rgba(86, 156, 97, 1) 0%, rgba(86, 137, 92, 1) 51%, rgba(58, 96, 62, 1) 100%);
 }
 
 main {
    flex: 1 0 auto;
 }
 
-/* GOOGLE FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Kavoon&family=Mogra&family=Oleo+Script&display=swap");
 :root {
    --panel: #11162b;
 }
@@ -41,10 +44,7 @@ header h1 {
    line-height: 1.1;
 }
 
-#textborder {
-   -webkit-text-stroke-color: #ffeac4;
-   -webkit-text-stroke-width: 0.5px;
-}
+
 
 /* Modal Button Styles */
 .icon-modal {
@@ -72,8 +72,9 @@ header h1 {
 /* MAIN STYLES */
 
 main {
-   background: #569c61;
-   background: radial-gradient(circle, rgba(86, 156, 97, 1) 0%, rgba(86, 137, 92, 1) 51%, rgba(58, 96, 62, 1) 100%);
+   background: none;
+   width: auto;
+   margin: 0 auto;
 }
 
 /* Card images inside flex containers */
@@ -84,6 +85,11 @@ main {
    aspect-ratio: 5 / 7;
    border-radius: 0.5rem;
    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+#dealer-sum, #your-sum {
+  color: aliceblue !important;
+  font-weight: normal;
 }
 
 /* Dark gradient panels */
@@ -99,7 +105,7 @@ main {
    color: #11162b;
 }
 
-#tally {
+#results, #tally {
    color: aliceblue;
 }
 
