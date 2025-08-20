@@ -93,7 +93,13 @@ window.addEventListener("load", () => {        // Run after the page finishes lo
   // Keyboard shortcuts: H / S / R
   document.addEventListener("keydown", (e) => { // Global key handler for accessibility/speed.
     const k = e.key.toLowerCase();              // Normalize key to lowercase.
-    if (k === "h" && !hitBtn.disabled) onHit(); // H acts like clicking Hit (if enabled).
+      if (k === "h" && !hitBtn.disabled) {
+        if (document.activeElement === hitBtn) {
+          e.preventDefault(); // Prevent button's default click on keypress
+        }
+        onHit(); // Always call onHit only once
+        return;
+      }
     if (k === "s" && !stayBtn.disabled) onStay(); // S acts like clicking Stay (if enabled).
     if (k === "r") newRound();                  // R always starts a new round.
   });
@@ -234,7 +240,12 @@ function setControls({ hit, stay, reset }) {      // Enable/disable control butt
 
 function updateSums(showDealer = false) {          // Update sum displays (dealer hidden until reveal).
   yourSumEl.textContent = reduceAce(yourSum, yourAceCount); // Show best player total.
-  dealerSumEl.textContent = showDealer ? reduceAce(dealerSum, dealerAceCount) : ""; // Show or hide dealer total.
+  // Defensive: if dealerSumEl exists, update it; else warn in console
+  if (dealerSumEl) {
+    dealerSumEl.textContent = showDealer ? reduceAce(dealerSum, dealerAceCount) : "";
+  } else {
+    console.warn("Dealer sum element (#dealer-sum) not found in the DOM.");
+  }
 }
 
 /* ---------- Deck & Cards ---------- */
