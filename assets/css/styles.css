@@ -1,5 +1,20 @@
 :root {
   --panel: #11162b;
+  --felt: #0a5d3b; 
+}
+
+/* Page background */
+html, body { min-height: 100%; }
+
+body {
+  background: var(--felt);
+  color: #f2f8f5;            /* light text so it’s readable on dark green */
+}
+
+.card.bg-gradient-dark {
+  background: linear-gradient(160deg, var(--panel), #0b1020);
+  border: none;
+  color: #e9eef3; /* light text inside the dark panel */
 }
 
 /* Modal Button Styles */
