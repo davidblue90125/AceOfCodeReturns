@@ -2,6 +2,21 @@
   --panel: #11162b;
 }
 
+/* Modal Button Styles */
+.icon-modal {
+    position: absolute;
+    left: 0;
+    translate: 7px -5px; /* Pushes icon slightly up */
+    cursor: pointer; /* Optional: shows pointer on hover */
+    color: #11162b; 
+}
+
+.modalbtncustom {
+  background-color: #11162b;
+
+}
+
+
 /* Card images inside flex containers */
 #dealer-cards img,
 #your-cards img {
