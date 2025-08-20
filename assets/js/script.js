@@ -72,10 +72,23 @@ window.addEventListener("load", () => {        // Run after the page finishes lo
     saveScore();                                // Persist the reset.
   });
 
-  // Keyboard shortcuts: H / S / R
+  // Keyboard shortcuts: H / S / R / E
   document.addEventListener("keydown", (e) => { // Global key handler for accessibility/speed.
     const k = e.key.toLowerCase();              // Normalize key to lowercase.
-      if (k === "h" && !hitBtn.disabled) {
+    
+    // E: reset scoreboard
+if (k === "e" && !resetScoreBtn.disabled) {
+  if (document.activeElement === resetScoreBtn) {
+    e.preventDefault(); // avoid double-activation when the button is focused
+  }
+  wins = losses = ties = 0;
+  updateTally();
+  saveScore();
+  resultsEl.textContent = "Scoreboard reset.";
+  return;
+}
+    
+    if (k === "h" && !hitBtn.disabled) {
         if (document.activeElement === hitBtn) {
           e.preventDefault(); // Prevent button's default click on keypress
         }
