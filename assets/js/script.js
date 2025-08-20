@@ -93,19 +93,17 @@ window.addEventListener("load", () => {        // Run after the page finishes lo
   // Keyboard shortcuts: H / S / R
   document.addEventListener("keydown", (e) => { // Global key handler for accessibility/speed.
     const k = e.key.toLowerCase();              // Normalize key to lowercase.
-    if (k === "h" && !hitBtn.disabled) onHit(); // H acts like clicking Hit (if enabled).
+      if (k === "h" && !hitBtn.disabled) {
+        if (document.activeElement === hitBtn) {
+          e.preventDefault(); // Prevent button's default click on keypress
+        }
+        onHit(); // Always call onHit only once
+        return;
+      }
     if (k === "s" && !stayBtn.disabled) onStay(); // S acts like clicking Stay (if enabled).
     if (k === "r") newRound();                  // R always starts a new round.
   });
 });
-
-// Keyboard shortcuts: H / S / R
-  document.addEventListener("keydown", (e) => { // Global key handler for accessibility/speed.
-    const k = e.key.toLowerCase();              // Normalize key to lowercase.
-    if (k === "h" && !hitBtn.disabled) onHit(); // H acts like clicking Hit (if enabled).
-    if (k === "s" && !stayBtn.disabled) onStay(); // S acts like clicking Stay (if enabled).
-    if (k === "r") newRound();                  // R always starts a new round.
-  });
 
 /* ---------- Round flow ---------- */
 function newRound() {                           // Prepare and deal a brand-new round.
