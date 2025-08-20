@@ -1,7 +1,8 @@
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Kavoon&family=Mogra&family=Oleo+Script&display=swap");
 
-html, body {
+html,
+body {
    height: 100%;
    margin: 0;
    padding: 0;
@@ -44,8 +45,6 @@ header h1 {
    line-height: 1.1;
 }
 
-
-
 /* Modal Button Styles */
 .icon-modal {
    position: absolute;
@@ -59,6 +58,14 @@ header h1 {
    background-color: #11162b;
 }
 
+.modal-body {
+   background: #569c61;
+   background: radial-gradient(circle, rgba(86, 156, 97, 1) 0%, rgba(86, 137, 92, 1) 51%, rgba(58, 96, 62, 1) 100%);
+   color: white;
+   
+   
+   
+}
 .modalbtncustom {
    background: #d4911e;
    background: linear-gradient(0deg, rgba(212, 145, 30, 1) 0%, rgba(230, 176, 85, 1) 49%, rgba(255, 250, 237, 1) 100%);
@@ -87,9 +94,10 @@ main {
    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
-#dealer-sum, #your-sum {
-  color: aliceblue !important;
-  font-weight: normal;
+#dealer-sum,
+#your-sum {
+   color: aliceblue !important;
+   font-weight: normal;
 }
 
 /* Dark gradient panels */
@@ -105,7 +113,8 @@ main {
    color: #11162b;
 }
 
-#results, #tally {
+#results,
+#tally {
    color: aliceblue;
 }
 
