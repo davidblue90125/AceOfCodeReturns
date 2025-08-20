@@ -33,6 +33,10 @@
   border: none;
 }
 
+#tally {
+  color: aliceblue;
+}
+
 /* Skip link visible on focus */
 .visually-hidden-focusable:active,
 .visually-hidden-focusable:focus {
