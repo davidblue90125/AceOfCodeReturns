@@ -1,56 +1,83 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mogra&family=Oleo+Script:wght@400;700&display=swap');       
+
 :root {
-  --panel: #11162b;
+   --panel: #11162b;
+}
+
+/* HEADER STYLES */
+header {
+  background-color: #11162b;
+}
+
+h1,
+.icon-modal {
+   background: #e6b055;
+   background: -webkit-radial-gradient(#d4911e, #e6b055, #fffaed);
+   background-clip: inherit;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-weight: bold;
+   font-family: "Mogra", system-ui;
+}
+
+#textborder {
+   -webkit-text-stroke-color: #ffeac4;
+   -webkit-text-stroke-width: 0.5px;
 }
 
 /* Modal Button Styles */
 .icon-modal {
-    position: absolute;
-    left: 0;
-    translate: 7px -5px; /* Pushes icon slightly up */
-    cursor: pointer; /* Optional: shows pointer on hover */
-    color: #11162b; 
+   position: absolute;
+   left: 0;
+   translate: 7px -10px; 
+   cursor: pointer; /* Optional: shows pointer on hover */
+   color: #e6b055;
 }
 
 .modalbtncustom {
-  background-color: #11162b;
-
+   background-color: #11162b;
 }
-
 
 /* Card images inside flex containers */
 #dealer-cards img,
 #your-cards img {
-  height: clamp(110px, 18vw, 175px); /* responsive card size */
-  width: auto;
-  aspect-ratio: 5 / 7;
-  border-radius: 0.5rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+   height: clamp(110px, 18vw, 175px); /* responsive card size */
+   width: auto;
+   aspect-ratio: 5 / 7;
+   border-radius: 0.5rem;
+   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 /* Dark gradient panels */
 .card.bg-gradient-dark {
-  background: linear-gradient(160deg, var(--panel), #0b1020);
-  border: none;
+   background: linear-gradient(160deg, var(--panel), #0b1020);
+   border: none;
 }
 
 #tally {
-  color: aliceblue;
+   color: aliceblue;
 }
 
 /* Skip link visible on focus */
 .visually-hidden-focusable:active,
 .visually-hidden-focusable:focus {
-  position: static !important;
-  width: auto;
-  height: auto;
-  margin: 0;
-  clip: auto;
-  white-space: normal;
-  overflow: visible;
+   position: static !important;
+   width: auto;
+   height: auto;
+   margin: 0;
+   clip: auto;
+   white-space: normal;
+   overflow: visible;
 }
 
 /* Keep results line height stable */
 .min-h-1 {
-  min-height: 1.5rem;
+   min-height: 1.5rem;
 }
 
+/* FOOTER STYLES */
+footer, footer p {
+  background: #11162b;
+  color: aliceblue;
+}
