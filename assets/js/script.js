@@ -1,21 +1,3 @@
-
-/**
- * Blackjack — Single Page App
- * MUST + SHOULD features:
- * - Responsive UI, Hit/Stay, dealer draws to 17, running hand totals
- * - Natural Blackjack (two-card 21) pays +2 wins
- * - Reset round, keyboard H/S/R
- * - Scoreboard (wins/losses/ties) visible & persisted with Reset Score control
- * - Instructions + Gamble Aware link (in HTML)
- *
- * Folder structure:
- *  index.html
- *  assets/css/style.css
- *  assets/js/script.js
- *  assets/images/favicon.png
- *  assets/cards/[cardname].png  (incl. BACK.png)
- */
-
 "use strict";                           // Enforce stricter JS parsing/rules (catches silent errors).
 
 /* ---------- State ---------- */
