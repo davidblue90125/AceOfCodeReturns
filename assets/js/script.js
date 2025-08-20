@@ -240,7 +240,12 @@ function setControls({ hit, stay, reset }) {      // Enable/disable control butt
 
 function updateSums(showDealer = false) {          // Update sum displays (dealer hidden until reveal).
   yourSumEl.textContent = reduceAce(yourSum, yourAceCount); // Show best player total.
-  dealerSumEl.textContent = showDealer ? reduceAce(dealerSum, dealerAceCount) : ""; // Show or hide dealer total.
+  // Defensive: if dealerSumEl exists, update it; else warn in console
+  if (dealerSumEl) {
+    dealerSumEl.textContent = showDealer ? reduceAce(dealerSum, dealerAceCount) : "";
+  } else {
+    console.warn("Dealer sum element (#dealer-sum) not found in the DOM.");
+  }
 }
 
 /* ---------- Deck & Cards ---------- */
