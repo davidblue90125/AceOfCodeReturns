@@ -121,9 +121,40 @@ Black - from the playing cards
 Red - from the playing cards  
 
 ## FEATURES:
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
-This section can be used to explain what pages your site is made up of.
-Explain your features on the website,(navigation, pages, links, forms.....)
+
+![Screenshot of homepage](assets/images/features-1.png) 
+
+1. Favicon of card image
+
+2. Information icon - clicks to open modal
+
+3. Header with title
+
+4. Dealer area with cards
+
+5. Dealer running score
+
+6. Player area with cards
+
+7. Player running score
+
+8. Control buttons
+
+9. Game status message
+
+10. Score tally
+
+11. Footer with copyright information
+
+12. Link of footer to gamble support website that opens on another page
+
+13. 404 error message
+
+14. Modal with information on how to play game
+
+![Screenshot of modal](assets/images/features-2.png)  
+
+
 ### NAVIGATION
 ### FOOTER
 ### OTHER FEATURES
@@ -162,15 +193,12 @@ CSS
 JavaScript  
 VS Code  
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
 ### LANGUAGES USED
 HTML
 CSS
 Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+
 ### FRAMEWORKS, LIBRARIES & PROGRAMS USED
-Add any frameworks, libraries or programs used while creating your project.
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
 Bootstrap
 Github
 
