@@ -98,26 +98,18 @@ As a player, I need clear controls including Reset so I can start a new round an
 ![Wireframe for Mobile](assets/images/wireframe-mobile.png) 
 
 ### TYPOGRAPHY
-#### Tools used:
+Explain font you've used for your project
+If you've imported fonts to use in your project, add some information about them here. You can include information like:
 
-* Google Fonts
-* Font Joy
+Why did you choose the font you have?
+Is this an accessibly friendly font?
+What weights have you included?
 
-Fonts used for this project:
-
-* Kavoon (serif)- for H1 headings
-* Quando (serif) - Subheadings and Buttons
-* Hind Madurai (serif) - Paragraphs
-
-These fonts were chosen to a fun vibe to reflect the game of BlackJack. Fonts were chosen using [fontjoy](https://fontjoy.com/#) and imported via [Google Fonts](https://fonts.google.com/selection/embed)
-
-Here is an image of the fonts chosen as a reference.
-![image](assets/images/Screenshot%202025-08-21%20at%2012.04.56.png)
+I also like to include an image of the fonts chosen as a reference.
 ### COLOUR SCHEME
 
 ![Color Palette](assets/images/color-palette.png)  
-![Color Palette 2](assets/images/Screenshot%202025-08-21%20at%2012.17.36.png)
-Colour palettte created using [Coolors](https://coolors.co/)
+
 ### IMAGERY
 Use this section to explain what sort of imagery you plan to use through your site.
 
@@ -162,12 +154,14 @@ Github
 
 
 ## TESTING
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
-Important part of your README!!!
+
 ### Google's Lighthouse Performance
-Screenshots of certain pages and scores (mobile and desktop)
+#### Mobile Results
+
+#### 
+
+
+
 ### Browser Compatibility
 Check compatability with different browsers
 ### Responsiveness
