@@ -1,21 +1,3 @@
-
-/**
- * Blackjack — Single Page App
- * MUST + SHOULD features:
- * - Responsive UI, Hit/Stay, dealer draws to 17, running hand totals
- * - Natural Blackjack (two-card 21) pays +2 wins
- * - Reset round, keyboard H/S/R
- * - Scoreboard (wins/losses/ties) visible & persisted with Reset Score control
- * - Instructions + Gamble Aware link (in HTML)
- *
- * Folder structure:
- *  index.html
- *  assets/css/style.css
- *  assets/js/script.js
- *  assets/images/favicon.png
- *  assets/cards/[cardname].png  (incl. BACK.png)
- */
-
 "use strict";                           // Enforce stricter JS parsing/rules (catches silent errors).
 
 /* ---------- State ---------- */
@@ -90,10 +72,23 @@ window.addEventListener("load", () => {        // Run after the page finishes lo
     saveScore();                                // Persist the reset.
   });
 
-  // Keyboard shortcuts: H / S / R
+  // Keyboard shortcuts: H / S / R / E
   document.addEventListener("keydown", (e) => { // Global key handler for accessibility/speed.
     const k = e.key.toLowerCase();              // Normalize key to lowercase.
-      if (k === "h" && !hitBtn.disabled) {
+    
+    // E: reset scoreboard
+if (k === "e" && !resetScoreBtn.disabled) {
+  if (document.activeElement === resetScoreBtn) {
+    e.preventDefault(); // avoid double-activation when the button is focused
+  }
+  wins = losses = ties = 0;
+  updateTally();
+  saveScore();
+  resultsEl.textContent = "Scoreboard reset.";
+  return;
+}
+    
+    if (k === "h" && !hitBtn.disabled) {
         if (document.activeElement === hitBtn) {
           e.preventDefault(); // Prevent button's default click on keypress
         }
@@ -132,27 +127,14 @@ function newRound() {                           // Prepare and deal a brand-new 
   hidden = deck.pop();                          // Take one card for the dealer (kept hidden).
   dealerSum += getValue(hidden);                // Add its nominal value (Ace=11 for now).
   dealerAceCount += checkAce(hidden);           // Track if the card is an Ace.
-  dealerCardCount++;
+  dealerCardCount++;                            // Count a dealer card dealt.
 
-  // Deal one face-up card to dealer
-  const dealerUpCard = deck.pop();
-  dealerSum += getValue(dealerUpCard);
-  dealerAceCount += checkAce(dealerUpCard);
-  dealerCardCount++;
-  dealerCardsEl.appendChild(
-    makeCardImg(dealerUpCard, "Dealer card")
-  );
-
-  // Dealer draws more face-up cards to 17+
-  while (reduceAce(dealerSum, dealerAceCount) < 17 && dealerCardCount < 3) {
-    const card = deck.pop();
-    dealerSum += getValue(card);
-    dealerAceCount += checkAce(card);
-    dealerCardCount++;
-    dealerCardsEl.appendChild(
-      makeCardImg(card, "Dealer card")
-    );
-  }
+// American- dealer starts with 2 cards (1 hidden + 1 upcard), then stops.
+const upcard = deck.pop();
+dealerSum += getValue(upcard);
+dealerAceCount += checkAce(upcard);
+dealerCardCount++;
+dealerCardsEl.appendChild(makeCardImg(upcard, "Dealer upcard"));
 
   // Player initial two
   for (let i = 0; i < 2; i++) drawToPlayer();   // Deal two cards to the player (rendered).
@@ -203,6 +185,17 @@ function concludeRound() {                        // Reveal hidden card, finaliz
   // Reveal dealer hidden card
   hiddenImg.src = getCardImageSrc(hidden);        // Flip the dealer’s hidden image to the real card face.
   hiddenImg.alt = cardAlt(hidden);                // Update alt text to the actual card name.
+
+  // After player reveal & stay, dealer plays face-up to 17+
+  while (reduceAce(dealerSum, dealerAceCount) < 17) { // While best total is below 17…
+    const card = deck.pop();                    // Draw a face-up card.
+    dealerSum += getValue(card);                // Add its nominal value.
+    dealerAceCount += checkAce(card);           // Track aces for later reduction.
+    dealerCardCount++;                          // Count another dealer card.
+    dealerCardsEl.appendChild(                   // Render the face-up card in the dealer’s area.
+      makeCardImg(card, "Dealer card")
+    );
+  }
 
   // Final totals
   dealerSum = reduceAce(dealerSum, dealerAceCount); // Convert aces 11→1 as needed for dealer.

@@ -18,6 +18,9 @@
 
         <!-- JAVASCRIPT LINK -->
         <script defer src="assets/js/script.js"></script>
+
+
+
     </head>
 
 
@@ -31,7 +34,7 @@
                 <i class="fa-sharp fa-solid fa-circle-info fs-1 icon-modal" role="button" data-bs-toggle="modal" data-bs-target="#rulesmodal" aria-label="Open rules modal"></i>
 
                 <!-- TITLE CENTER -->
-                <h1 class="m-0 text-center">BlackJack</h1>
+                <h1 id="textborder" class="m-0 text-center"> <i class="fa-solid fa-diamond"></i>  BlackJack  <i class="fa-solid fa-diamond"></i></h1>
 
             </div>
         </header>
@@ -60,27 +63,29 @@
                         <h2>Player <span id="your-sum" class="fw-bold text-success" aria-live="polite"></span></h2>
                     </div>
 
-                    <div id="your-cards" class="d-flex flex-wrap gap-2 justify-content-center" aria-label="Player cards">
-                        <p>player cards go here</p>
-                    </div>
+                <div id="your-cards" class="d-flex flex-wrap gap-2 justify-content-center" aria-label="Player cards">
+                    <p class="m-0">player cards go here</p>
+                </div>
 
                 </section>
 
                 <!-- GAME BUTTONS AND TALLY -->
                 <section class="col-12" aria-label="Controls and game status">
-                    <div class="card bg-gradient-dark shadow rounded-4 p-3 text-center">
+                    <div class="card bg-gradient-dark shadow p-3 text-center">
                         <!-- Game buttoms -->
-                        <div>
+
+                        <div id="gamebuttons">
                             <button id="hit">Hit</button>
                             <button id="stay">Stay</button>
-                            <button id="reset">Reset</button>
+                            <button id="reset">Restart</button>
                             <button id="resetScore">Reset Score</button>
-                        </div>
+                        <div>
+
 
                         <!-- Tally -->
                         <p id="results" class="fs-5 min-h-1" aria-live="assertive" role="status"></p>
 
-                        <p id="tally" class="text-secondary m-0" aria-live="polite">
+                        <p id="tally" class="m-0" aria-live="polite">
                             Wins: <span id="wins">0</span> •
                             Losses: <span id="losses">0</span> •
                             Ties: <span id="ties">0</span>
@@ -126,14 +131,14 @@
                         <p>If your hand total is greater than the dealer's total, you win the game and score 1 point.</p>
                         <p>If the dealer's hand total is greater than yours, or the scores are tied, the dealer wins and scores 1 point.</p>
 
-                        <h4>Reset</h4>
-                        <p>If you want to play again, or restart the game, click Reset (or press the "R" key on your keyboard).</p>
+                        <h4>Restart</h4>
+                        <p>If you want to play again, or restart the game, click Restart (or press the "R" key on your keyboard).</p>
 
                         <h4>Reset scores</h4>
-                        <p>If you want to reset the scores, click Reset Score.</p>
+                        <p>If you want to reset the scores, click Reset Score (or press the "E" key on your keyboard).</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary modalbtncustom" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="modalbtncustom" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -141,7 +146,12 @@
 
 
         <!-- FOOTER -->
-        <footer class="text-center text-secondary pb-4" role="contentinfo">Footer Content</footer>
+        <footer class="text-center text-secondary pb-4 align-items-center
+        " role="contentinfo">
+            <p>&copy; 2025 AceOfCodes. All rights reserved.</p>
+            <p>Please play responsibly. For support, please visit: <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer">BeGambleAware.org</a>.
+            </p>
+        </footer>
 
         <!-- FONT AWESOME LINK-->
         <script src="https://kit.fontawesome.com/f082230656.js" crossorigin="anonymous"></script>
