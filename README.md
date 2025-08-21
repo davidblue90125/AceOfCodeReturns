@@ -11,13 +11,10 @@ Find the link to the deployed site [here](https://davidblue90125.github.io/AceOf
 
 ## TABLE OF CONTENTS:
 1. [Design & Planning](#design--planning)
-    * [User Experience (UX)](#user-experience-ux)
     * [User Stories](#user-stories)
     * [Wireframes](#wireframes)
     * [Typography](#typography)
     * [Colour Scheme](#colour-scheme)
-    * [Imagery](#imagery)
-
     
 2. [Features](#features)
     * [Navigation](#navigation)
@@ -116,9 +113,11 @@ I also like to include an image of the fonts chosen as a reference.
 
 ![Color Palette](assets/images/color-palette.png)  
 
-### IMAGERY
-Use this section to explain what sort of imagery you plan to use through your site.
-
+A color scheme was chosen to reflect a physical BlackJack environment:  
+Green - from the felt of the playing area    
+Gold - for money / tokens used in play  
+Black - from the playing cards  
+Red - from the playing cards  
 
 ## FEATURES:
 👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
