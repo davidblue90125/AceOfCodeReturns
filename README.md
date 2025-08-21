@@ -47,9 +47,48 @@ Add a link to the live site here, for Milestone 1 this will be the GitHub Pages 
 
 ## DESIGN & PLANNING:
 ### USER STORIES
-Write your user stories in this section
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
+Stay button functionality:
+As a player, I want to Stay to stop drawing and let the dealer reveal and resolve the round.
+
+Immediate round outcome feedback (win/lose/tie) and updated totals:
+As a player, I want immediate round outcome feedback (win/lose/tie) and updated totals.
+
+Consistent and readable interface:
+As a sighted user, I want polished visuals so the interface is readable and consistent.
+
+Auto-refresh of deck:
+As a player, I want the so I can keep playing long sessions.
+
+Wins/Losses/Ties scoreboard:
+As a player, I want the Wins/Losses/Ties scoreboard to persist across page reloads and be manually resettable.
+
+Responsiveness on all device sizes:
+As a player, I want responsive cards and panels so the UI fits any screen.
+
+Clear game layout:
+As a player, I want a clear game layout so that I can see dealer and player areas separately
+
+404 error page:
+As a site owner, I want a 404 error page to be displayed in the event of a 404 error
+
+Favicon:
+As a player, I want a site favicon so the game looks polished in the browser tab.
+
+Display default dealer cards when game starts:
+As a player, I want to start a round with one hidden dealer card and two visible player cards.
+
+Hit button functionality:
+As a player, I want to Hit to draw a new card while I haven’t busted.
+
+Rules of the game:
+As a new player, I want to click on a Rules button so that I can learn how to play the game
+
+Keyboard accessibility:
+As a player, I want keyboard accessibility to play without a mouse.
+
+Resetting the game:
+As a player, I need clear controls including Reset so I can start a new round anytime.
+
 ### WIREFRAMES
 
 ![Wireframe for Desktop](assets/images/wireframe-desktop.png) 
