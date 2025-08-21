@@ -98,12 +98,17 @@ As a player, I need clear controls including Reset so I can start a new round an
 ![Wireframe for Mobile](assets/images/wireframe-mobile.png) 
 
 ### TYPOGRAPHY
-Explain font you've used for your project
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
+Tools used:
 
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
+Google Fonts
+Font Joy
+
+Fonts used for this project:
+
+*Kavoon- for H1 headings
+*Quando (serif) - Subheadings and Buttons
+*Hind Madurai (serif) - Paragraphs
+These fonts were chosen to exude a calm yet business like vibe to make the website more cosy but maintain a professional and trustworthy feel. Fonts chosen Created using fontjoy
 
 I also like to include an image of the fonts chosen as a reference.
 ### COLOUR SCHEME
