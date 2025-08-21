@@ -98,18 +98,26 @@ As a player, I need clear controls including Reset so I can start a new round an
 ![Wireframe for Mobile](assets/images/wireframe-mobile.png) 
 
 ### TYPOGRAPHY
-Explain font you've used for your project
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
+#### Tools used:
 
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
+* Google Fonts
+* Font Joy
 
-I also like to include an image of the fonts chosen as a reference.
+Fonts used for this project:
+
+* Kavoon (serif)- for H1 headings
+* Quando (serif) - Subheadings and Buttons
+* Hind Madurai (serif) - Paragraphs
+
+These fonts were chosen to a fun vibe to reflect the game of BlackJack. Fonts were chosen using [fontjoy](https://fontjoy.com/#) and imported via [Google Fonts](https://fonts.google.com/selection/embed)
+
+Here is an image of the fonts chosen as a reference.
+![image](assets/images/Screenshot%202025-08-21%20at%2012.04.56.png)
 ### COLOUR SCHEME
 
 ![Color Palette](assets/images/color-palette.png)  
-
+![Color Palette 2](assets/images/Screenshot%202025-08-21%20at%2012.17.36.png)
+Colour palettte created using [Coolors](https://coolors.co/)
 ### IMAGERY
 Use this section to explain what sort of imagery you plan to use through your site.
 
