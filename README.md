@@ -191,25 +191,24 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 ## TECHNOLOGIES USED
 
+### LANGUAGES USED
+HTML
+CSS
+JavaScript
+
+### FRAMEWORKS, LIBRARIES & PROGRAMS USED
+Bootstrap
 favicon.io  
 Canva  
 GitHub project boards  
-GitHub version control  
-Bootstrap  
+GitHub version control   
 Font Awesome  
 HTML5  
 CSS  
 JavaScript  
 VS Code  
-
-### LANGUAGES USED
-HTML
-CSS
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
-
-### FRAMEWORKS, LIBRARIES & PROGRAMS USED
-Bootstrap
-Github
+Font Joy
+Coolors
 
 
 ## TESTING
@@ -273,26 +272,42 @@ W3 Validation performed and errors were identified. A div in one of the sections
 #### CSS Jigsaw Validator:
 No Errors found using the W3C CSS validation tool 
 
-### Manual Testing user stories or/and features
-Test all your user stories, you an create table 
-User Story |  Test | Pass
---- | --- | :---:
-paste here you user story | what is visible to the user and what action they should perform | &check;
-- and attach screenshot
 
 
 ## BUGS
-List of bugs and how did you fix them
+### Header and Footer Styling Issues
+Fixed in commit c653c01 and cd963d8
+Refactored header and footer styles for better accessibility and visual consistency.
+
+### Dealer and Player Area Layout
+Fixed in commit fc3ef4f and f751fc5
+Removed unnecessary Bootstrap grid classes and centered player cards for improved layout.
+
+### Tally Text Color Visibility
+Fixed in commit 067ddf6
+Updated tally text color to aliceblue for better contrast and readability.
+
+### Dealer Score Display
+Fixed in commit 6de0482
+Added code to display the dealer's score correctly.
+
+### Game Button Functionality
+Fixed in commit 5ae04b4
+Amended hit button code so that only one card is dealt per click.
+
+### Unclosed <div> in Game Buttons Section
+Closed an unclosed <div> in the game buttons section of index.html to resolve HTML validation errors and prevent layout issues.
+
 
 
 ## DEPLOYMENT
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+### Creating Repository on GitHub
+The repository was created on GitHub using the following method:
+- Go to the [home](https://github.com/dashboard) section on GitHub.
+- Click on + in the top right corner and select new repository from the drop-down. 
+- Enter a name for the repository and click Create repository.
 
-#### Creating Repository on GitHub
-- First make sure you are signed into [Github](https://github.com/) and go to the code institutes template, which can be found [here](https://github.com/Code-Institute-Org/gitpod-full-template).
-- Then click on **use this template** and select **Create a new repository** from the drop-down. Enter the name for the repository and click **Create repository from template**.
-- Once the repository was created, I clicked the green **gitpod** button to create a workspace in gitpod so that I could write the code for the site.
-#### Deloying on Github
+### Deloying on Github
 The site was deployed to Github Pages using the following method:
 - Go to the Github repository.
 - Navigate to the 'settings' tab.
@@ -300,7 +315,20 @@ The site was deployed to Github Pages using the following method:
 - Click 'save'.
 
 ### LOCAL DEVELOPMENT
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
+To make a copy of this project and run it locally:
+- Go to the [GitHub repository](https://github.com/davidblue90125/AceOfCodeReturns).
+- Click the green **Code** button and select **Download ZIP** to download the project files, or copy the URL under **Clone** to use with Git.
+- If using Git, open your terminal and run:
+  ```
+  git clone https://github.com/davidblue90125/AceOfCodeReturns.git
+  ```
+- Navigate into the project directory:
+  ```
+  cd AceOfCodeReturns
+  ```
+- Open the `index.html` file in your browser to play the game locally.
+
+No additional setup is required for basic play. If you want to make changes, you can edit the files in your favorite code editor (such as VS Code).
 
 ## CREDITS
 
