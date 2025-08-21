@@ -128,19 +128,28 @@ function newRound() {                           // Prepare and deal a brand-new 
     shuffleDeck();                              // …shuffle it with Fisher–Yates.
   }
 
-  // Dealer hidden
+  // Dealer initial two cards: one hidden, one face-up
   hidden = deck.pop();                          // Take one card for the dealer (kept hidden).
   dealerSum += getValue(hidden);                // Add its nominal value (Ace=11 for now).
   dealerAceCount += checkAce(hidden);           // Track if the card is an Ace.
-  dealerCardCount++;                            // Count a dealer card dealt.
+  dealerCardCount++;
 
-  // Dealer draws face-up to 17+
-  while (reduceAce(dealerSum, dealerAceCount) < 17) { // While best total is below 17…
-    const card = deck.pop();                    // Draw a face-up card.
-    dealerSum += getValue(card);                // Add its nominal value.
-    dealerAceCount += checkAce(card);           // Track aces for later reduction.
-    dealerCardCount++;                          // Count another dealer card.
-    dealerCardsEl.appendChild(                   // Render the face-up card in the dealer’s area.
+  // Deal one face-up card to dealer
+  const dealerUpCard = deck.pop();
+  dealerSum += getValue(dealerUpCard);
+  dealerAceCount += checkAce(dealerUpCard);
+  dealerCardCount++;
+  dealerCardsEl.appendChild(
+    makeCardImg(dealerUpCard, "Dealer card")
+  );
+
+  // Dealer draws more face-up cards to 17+
+  while (reduceAce(dealerSum, dealerAceCount) < 17 && dealerCardCount < 3) {
+    const card = deck.pop();
+    dealerSum += getValue(card);
+    dealerAceCount += checkAce(card);
+    dealerCardCount++;
+    dealerCardsEl.appendChild(
       makeCardImg(card, "Dealer card")
     );
   }
