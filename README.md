@@ -1,9 +1,11 @@
 # AceOfCodeReturns
-Add a Blurb about the site here, what does it do, why did you build it?
+We thought it would be fun to take a classic card game and build the game in browser for a Hackathon project. Blackjack was the perfect choice since it’s simple to learn, quick to play, and a great way to practice building something interactive. Our site lets you play against a dealer, hit or stand, reset score and see the outcome right away, just like at the table but in your browser.
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
+![Screenshot](assets/images/Screenshot%202025-08-21%20at%2011.00.01.png)
 
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
+[Here](https://ui.dev/amiresponsive?url=https://davidblue90125.github.io/AceOfCodeReturns/) is a link to the site showcased on different screensizes using amiresponsive!
+
+Find the link to the deployed site [here](https://davidblue90125.github.io/AceOfCodeReturns/)
 
 ---
 
