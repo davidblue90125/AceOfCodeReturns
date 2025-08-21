@@ -11,13 +11,10 @@ Find the link to the deployed site [here](https://davidblue90125.github.io/AceOf
 
 ## TABLE OF CONTENTS:
 1. [Design & Planning](#design--planning)
-    * [User Experience (UX)](#user-experience-ux)
     * [User Stories](#user-stories)
     * [Wireframes](#wireframes)
     * [Typography](#typography)
     * [Colour Scheme](#colour-scheme)
-    * [Imagery](#imagery)
-
     
 2. [Features](#features)
     * [Navigation](#navigation)
@@ -49,47 +46,53 @@ Find the link to the deployed site [here](https://davidblue90125.github.io/AceOf
 
 ## DESIGN & PLANNING:
 ### USER STORIES
-(must have) Stay button functionality:
+
+## Must have  
+Stay button functionality:  
 As a player, I want to Stay to stop drawing and let the dealer reveal and resolve the round.
 
-(must have) Immediate round outcome feedback (win/lose/tie) and updated totals:
+Immediate round outcome feedback (win/lose/tie) and updated totals:  
 As a player, I want immediate round outcome feedback (win/lose/tie) and updated totals.
 
-(should have) Consistent and readable interface:
-As a sighted user, I want polished visuals so the interface is readable and consistent.
-
-(could have) Auto-refresh of deck:
-As a player, I want the so I can keep playing long sessions.
-
-(could have) Wins/Losses/Ties scoreboard:
-As a player, I want the Wins/Losses/Ties scoreboard to persist across page reloads and be manually resettable.
-
-(must have) Responsiveness on all device sizes:
+Responsiveness on all device sizes:  
 As a player, I want responsive cards and panels so the UI fits any screen.
 
-(must have) Clear game layout:
+Clear game layout:  
 As a player, I want a clear game layout so that I can see dealer and player areas separately
 
-(should have) 404 error page:
-As a site owner, I want a 404 error page to be displayed in the event of a 404 error
-
-(could have) Favicon:
-As a player, I want a site favicon so the game looks polished in the browser tab.
-
-(must have)Display default dealer cards when game starts:
+Display default dealer cards when game starts:  
 As a player, I want to start a round with one hidden dealer card and two visible player cards.
 
-(must have) Hit button functionality:
+Hit button functionality:  
 As a player, I want to Hit to draw a new card while I haven’t busted.
 
-(must have) Rules of the game:
+Rules of the game:  
 As a new player, I want to click on a Rules button so that I can learn how to play the game
 
-(should have) Keyboard accessibility:
+Resetting the game:  
+As a player, I need clear controls including Reset so I can start a new round anytime.
+
+## Should have  
+
+Consistent and readable interface:  
+As a sighted user, I want polished visuals so the interface is readable and consistent.
+
+Keyboard accessibility:  
 As a player, I want keyboard accessibility to play without a mouse.
 
-(must have) Resetting the game:
-As a player, I need clear controls including Reset so I can start a new round anytime.
+## Could have
+
+Auto-refresh of deck:  
+As a player, I want the so I can keep playing long sessions.
+
+Wins/Losses/Ties scoreboard:  
+As a player, I want the Wins/Losses/Ties scoreboard to persist across page reloads and be manually resettable.
+
+404 error page:  
+As a site owner, I want a 404 error page to be displayed in the event of a 404 error
+
+Favicon:  
+As a player, I want a site favicon so the game looks polished in the browser tab.
 
 ### WIREFRAMES
 
@@ -98,31 +101,77 @@ As a player, I need clear controls including Reset so I can start a new round an
 ![Wireframe for Mobile](assets/images/wireframe-mobile.png) 
 
 ### TYPOGRAPHY
-Explain font you've used for your project
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
+#### Tools used:
 
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
+* Google Fonts
+* Font Joy
 
-I also like to include an image of the fonts chosen as a reference.
+Fonts used for this project:
+
+* Kavoon (serif)- for H1 headings
+* Quando (serif) - Subheadings and Buttons
+* Hind Madurai (serif) - Paragraphs
+
+These fonts were chosen to a fun vibe to reflect the game of BlackJack. Fonts were chosen using [fontjoy](https://fontjoy.com/#) and imported via [Google Fonts](https://fonts.google.com/selection/embed)
+
+Here is an image of the fonts chosen as a reference.
+![image](assets/images/Screenshot%202025-08-21%20at%2012.04.56.png)
 ### COLOUR SCHEME
 
 ![Color Palette](assets/images/color-palette.png)  
-
-### IMAGERY
-Use this section to explain what sort of imagery you plan to use through your site.
-
+![Color Palette 2](assets/images/Screenshot%202025-08-21%20at%2012.17.36.png)
+Colour palettte created using [Coolors](https://coolors.co/)
+A color scheme was chosen to reflect a physical BlackJack environment:  
+Green - from the felt of the playing area    
+Gold - for money / tokens used in play  
+Black - from the playing cards  
+Red - from the playing cards  
 
 ## FEATURES:
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
-This section can be used to explain what pages your site is made up of.
-Explain your features on the website,(navigation, pages, links, forms.....)
+
+![Screenshot of homepage](assets/images/features-1.png) 
+
+1. Favicon of card image
+
+2. Information icon - clicks to open modal
+
+3. Header with title
+
+4. Dealer area with cards
+
+5. Dealer running score
+
+6. Player area with cards
+
+7. Player running score
+
+8. Control buttons
+
+9. Game status message
+
+10. Score tally
+
+11. Footer with copyright information
+
+12. Link of footer to gamble support website that opens on another page
+
+13. 404 error message
+
+14. Modal with information on how to play game
+
+![Screenshot of modal](assets/images/features-2.png)  
+
+
 ### NAVIGATION
 ### FOOTER
 ### OTHER FEATURES
 ### FUTURE IMPLEMENTATIONS
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+
+1. Adding SPLIT functionality to the game
+
+2. Improvement - when player goes bust, dealer wins automatically without pulling more cards
+
+
 ### ACCESSIBILITY
 Be an amazing developer and get used to thinking about accessibility in all of your projects!
 his is the place to make a note of anything you have done with accessibility in mind. Some examples include:
@@ -139,33 +188,89 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 
 ## TECHNOLOGIES USED
-List of technologies used for your project...
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
+
+favicon.io  
+Canva  
+GitHub project boards  
+GitHub version control  
+Bootstrap  
+Font Awesome  
+HTML5  
+CSS  
+JavaScript  
+VS Code  
+
 ### LANGUAGES USED
 HTML
 CSS
 Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+
 ### FRAMEWORKS, LIBRARIES & PROGRAMS USED
-Add any frameworks, libraries or programs used while creating your project.
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
 Bootstrap
 Github
 
 
-## TESTING 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
-Important part of your README!!!
+## TESTING
+
 ### Google's Lighthouse Performance
-Screenshots of certain pages and scores (mobile and desktop)
+#### Mobile Results
+![Mobile Image](/assets/images/Screenshot%202025-08-21%20at%2013.08.30.png)
+
+The performance issues for mobile stem from large image files
+
+Insights:
+* Improve image delivery Est savings of 1,284 KiB
+* Use efficient cache lifetimes Est savings of 1,197 KiB
+* Render blocking requests Est savings of 900 ms
+* Font display Est savings of 30 ms
+
+Diagnostics
+* Minify JavaScript Est savings of 4 KiB
+* Reduce unused CSS Est savings of 45 KiB
+
+#### Desktop Results
+![Desktop Image](assets/images/Screenshot%202025-08-21%20at%2013.07.31.png)
+
+The Desktop site passed all the performance tests 
+
+Insights
+* Render blocking requests Est savings of 550 ms
+* Use efficient cache lifetimes Est savings of 1,012 KiB
+* Improve image delivery Est savings of 1,075 KiB
+* Font display Est savings of 40 ms
+
+Diagnostics
+* Minify JavaScript Est savings of 4 KiB
+* Avoid serving legacy JavaScript to modern browsers Est savings of 0 KiB
+
+
+
 ### Browser Compatibility
-Check compatability with different browsers
+Browser compatability with all the main browsers tested using powermapper.
+
+![Screenshot](assets/images/Screenshot%202025-08-21%20at%2013.25.20.png)
+No browser compatability issues
+
 ### Responsiveness
-Screenshots of the responsivness, pick few devices (from 320px top 1200px)
+
+#### Mobile S 320px
+![screen1](assets/images/Screenshot%202025-08-21%20at%2013.33.01.png)
+
+#### Tablet 768px 
+![screen 2](assets/images/Screenshot%202025-08-21%20at%2013.34.02.png)
+
+#### Laptop L 1440px
+![screen 3](assets/images/Screenshot%202025-08-21%20at%2013.35.18.png)
+
 ### Code Validation
-Validate your code HTML, CSS (all pages/files need to be validated!!!), display screenshots
+#### W3 HTML Validator:
+![W3 Results](assets/images/Screenshot%202025-08-21%20at%2013.50.57.png)
+W3 Validation performed and errors were identified. A div in one of the sections was not closed, causing these errors, once this bug was fixed the warnings resolved. 
+
+
+#### CSS Jigsaw Validator:
+No Errors found using the W3C CSS validation tool 
+
 ### Manual Testing user stories or/and features
 Test all your user stories, you an create table 
 User Story |  Test | Pass
@@ -195,13 +300,11 @@ The site was deployed to Github Pages using the following method:
 ### LOCAL DEVELOPMENT
 The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
 
-
-
-
 ## CREDITS
-List of used resources for your website (text, images, snippets of code, projects....)
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
-The Credits section is where you can credit all the people and sources you used throughout your project.
+
+YouTube video tutorial: https://www.youtube.com/watch?v=bMYCWccL-3U  
+Card images: https://github.com/ImKennyYip/black-jack
+
 ### CODE USED
 If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
   - Code & Text Content

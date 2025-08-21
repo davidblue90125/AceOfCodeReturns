@@ -1,8 +1,13 @@
-/* GOOGLE FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Kavoon&family=Mogra&family=Oleo+Script&display=swap");
 
-html,
-body {
+/* 1. GOOGLE FONTS & ROOT */
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Kavoon&family=Molengo&family=Quando&display=swap");
+
+:root {
+   --panel: #11162b;
+}
+
+/* 2. RESET & BASE LAYOUT */
+html, body {
    height: 100%;
    margin: 0;
    padding: 0;
@@ -18,19 +23,20 @@ body {
 
 main {
    flex: 1 0 auto;
+   background: none;
+   width: auto;
+   margin: 0 auto;
 }
 
-:root {
-   --panel: #11162b;
+/* 3. TYPOGRAPHY */
+
+body p {
+   font-family: "Hind Madurai", sans-serif;
+   font-weight: 400;
+   font-style: normal;
 }
 
-/* HEADER STYLES */
-header {
-   background-color: #11162b;
-}
-
-h1,
-.icon-modal {
+h1, .icon-modal {
    background: #e6b055;
    background: -webkit-radial-gradient(#d4911e, #e6b055, #fffaed);
    background-clip: inherit;
@@ -45,12 +51,29 @@ header h1 {
    line-height: 1.1;
 }
 
-/* Modal Button Styles */
+h4 {
+   font-family: "Quando", serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+button {
+   font-family: "Quando", serif !important;
+   font-weight: 400;
+   font-style: normal;
+}
+
+/* 4. HEADER */
+header {
+   background-color: #11162b;
+}
+
+/* 5. MODAL */
 .icon-modal {
    position: absolute;
    left: 0;
    translate: 7px -10px;
-   cursor: pointer; /* Optional: shows pointer on hover */
+   cursor: pointer;
    color: #e6b055;
 }
 
@@ -62,10 +85,8 @@ header h1 {
    background: #569c61;
    background: radial-gradient(circle, rgba(86, 156, 97, 1) 0%, rgba(86, 137, 92, 1) 51%, rgba(58, 96, 62, 1) 100%);
    color: white;
-   
-   
-   
 }
+
 .modalbtncustom {
    background: #d4911e;
    background: linear-gradient(0deg, rgba(212, 145, 30, 1) 0%, rgba(230, 176, 85, 1) 49%, rgba(255, 250, 237, 1) 100%);
@@ -76,26 +97,24 @@ header h1 {
    background-color: #11162b;
 }
 
-/* MAIN STYLES */
-
-main {
-   background: none;
-   width: auto;
-   margin: 0 auto;
+@media (min-width: 1024px) {
+   .modal-dialog {
+      max-width: 700px;
+   }
 }
 
+/* 6. MAIN & GAME AREA */
 /* Card images inside flex containers */
 #dealer-cards img,
 #your-cards img {
-   height: clamp(110px, 18vw, 175px); /* responsive card size */
+   height: clamp(110px, 18vw, 175px);
    width: auto;
    aspect-ratio: 5 / 7;
    border-radius: 0.5rem;
    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
-#dealer-sum,
-#your-sum {
+#dealer-sum, #your-sum {
    color: aliceblue !important;
    font-weight: normal;
 }
@@ -113,12 +132,11 @@ main {
    color: #11162b;
 }
 
-#results,
-#tally {
+#results, #tally {
    color: aliceblue;
 }
 
-/* Skip link visible on focus */
+/* 7. UTILITIES */
 .visually-hidden-focusable:active,
 .visually-hidden-focusable:focus {
    position: static !important;
@@ -130,14 +148,12 @@ main {
    overflow: visible;
 }
 
-/* Keep results line height stable */
 .min-h-1 {
    min-height: 1.5rem;
 }
 
-/* FOOTER STYLES */
-footer,
-footer p {
+/* 8. FOOTER */
+footer, footer p {
    background: #11162b;
    color: aliceblue;
    margin-bottom: 0;
