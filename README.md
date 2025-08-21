@@ -216,17 +216,63 @@ Github
 
 ### Google's Lighthouse Performance
 #### Mobile Results
+![Mobile Image](/assets/images/Screenshot%202025-08-21%20at%2013.08.30.png)
 
-#### 
+The performance issues for mobile stem from large image files
+
+Insights:
+* Improve image delivery Est savings of 1,284 KiB
+* Use efficient cache lifetimes Est savings of 1,197 KiB
+* Render blocking requests Est savings of 900 ms
+* Font display Est savings of 30 ms
+
+Diagnostics
+* Minify JavaScript Est savings of 4 KiB
+* Reduce unused CSS Est savings of 45 KiB
+
+#### Desktop Results
+![Desktop Image](assets/images/Screenshot%202025-08-21%20at%2013.07.31.png)
+
+The Desktop site passed all the performance tests 
+
+Insights
+* Render blocking requests Est savings of 550 ms
+* Use efficient cache lifetimes Est savings of 1,012 KiB
+* Improve image delivery Est savings of 1,075 KiB
+* Font display Est savings of 40 ms
+
+Diagnostics
+* Minify JavaScript Est savings of 4 KiB
+* Avoid serving legacy JavaScript to modern browsers Est savings of 0 KiB
 
 
 
 ### Browser Compatibility
-Check compatability with different browsers
+Browser compatability with all the main browsers tested using powermapper.
+
+![Screenshot](assets/images/Screenshot%202025-08-21%20at%2013.25.20.png)
+No browser compatability issues
+
 ### Responsiveness
-Screenshots of the responsivness, pick few devices (from 320px top 1200px)
+
+#### Mobile S 320px
+![screen1](assets/images/Screenshot%202025-08-21%20at%2013.33.01.png)
+
+#### Tablet 768px 
+![screen 2](assets/images/Screenshot%202025-08-21%20at%2013.34.02.png)
+
+#### Laptop L 1440px
+![screen 3](assets/images/Screenshot%202025-08-21%20at%2013.35.18.png)
+
 ### Code Validation
-Validate your code HTML, CSS (all pages/files need to be validated!!!), display screenshots
+#### W3 HTML Validator:
+![W3 Results](assets/images/Screenshot%202025-08-21%20at%2013.50.57.png)
+W3 Validation performed and errors were identified. A div in one of the sections was not closed, causing these errors, once this bug was fixed the warnings resolved. 
+
+
+#### CSS Jigsaw Validator:
+No Errors found using the W3C CSS validation tool 
+
 ### Manual Testing user stories or/and features
 Test all your user stories, you an create table 
 User Story |  Test | Pass
