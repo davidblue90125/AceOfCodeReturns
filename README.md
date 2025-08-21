@@ -109,6 +109,7 @@ Is this an accessibly friendly font?
 What weights have you included?
 
 I also like to include an image of the fonts chosen as a reference.
+
 ### COLOUR SCHEME
 
 ![Color Palette](assets/images/color-palette.png)  
@@ -127,7 +128,12 @@ Explain your features on the website,(navigation, pages, links, forms.....)
 ### FOOTER
 ### OTHER FEATURES
 ### FUTURE IMPLEMENTATIONS
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+
+1. Adding SPLIT functionality to the game
+
+2. Improvement - when player goes bust, dealer wins automatically without pulling more cards
+
+
 ### ACCESSIBILITY
 Be an amazing developer and get used to thinking about accessibility in all of your projects!
 his is the place to make a note of anything you have done with accessibility in mind. Some examples include:
