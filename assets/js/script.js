@@ -186,6 +186,17 @@ function concludeRound() {                        // Reveal hidden card, finaliz
   hiddenImg.src = getCardImageSrc(hidden);        // Flip the dealer’s hidden image to the real card face.
   hiddenImg.alt = cardAlt(hidden);                // Update alt text to the actual card name.
 
+  // After player reveal & stay, dealer plays face-up to 17+
+  while (reduceAce(dealerSum, dealerAceCount) < 17) { // While best total is below 17…
+    const card = deck.pop();                    // Draw a face-up card.
+    dealerSum += getValue(card);                // Add its nominal value.
+    dealerAceCount += checkAce(card);           // Track aces for later reduction.
+    dealerCardCount++;                          // Count another dealer card.
+    dealerCardsEl.appendChild(                   // Render the face-up card in the dealer’s area.
+      makeCardImg(card, "Dealer card")
+    );
+  }
+
   // Final totals
   dealerSum = reduceAce(dealerSum, dealerAceCount); // Convert aces 11→1 as needed for dealer.
   yourSum = reduceAce(yourSum, yourAceCount);       // Convert aces 11→1 as needed for player.
