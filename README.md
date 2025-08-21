@@ -129,6 +129,12 @@ Red - from the playing cards
 
 ## FEATURES:
 
+### FOOTER
+
+Footer contains copyright information and an external link to a gamble support website.
+
+### OTHER FEATURES
+
 ![Screenshot of homepage](assets/images/features-1.png) 
 
 1. Favicon of card image
@@ -161,10 +167,6 @@ Red - from the playing cards
 
 ![Screenshot of modal](assets/images/features-2.png)  
 
-
-### NAVIGATION
-### FOOTER
-### OTHER FEATURES
 ### FUTURE IMPLEMENTATIONS
 
 1. Adding SPLIT functionality to the game
