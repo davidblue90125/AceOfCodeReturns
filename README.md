@@ -11,13 +11,10 @@ Find the link to the deployed site [here](https://davidblue90125.github.io/AceOf
 
 ## TABLE OF CONTENTS:
 1. [Design & Planning](#design--planning)
-    * [User Experience (UX)](#user-experience-ux)
     * [User Stories](#user-stories)
     * [Wireframes](#wireframes)
     * [Typography](#typography)
     * [Colour Scheme](#colour-scheme)
-    * [Imagery](#imagery)
-
     
 2. [Features](#features)
     * [Navigation](#navigation)
@@ -49,47 +46,53 @@ Find the link to the deployed site [here](https://davidblue90125.github.io/AceOf
 
 ## DESIGN & PLANNING:
 ### USER STORIES
-(must have) Stay button functionality:
+
+## Must have  
+Stay button functionality:  
 As a player, I want to Stay to stop drawing and let the dealer reveal and resolve the round.
 
-(must have) Immediate round outcome feedback (win/lose/tie) and updated totals:
+Immediate round outcome feedback (win/lose/tie) and updated totals:  
 As a player, I want immediate round outcome feedback (win/lose/tie) and updated totals.
 
-(should have) Consistent and readable interface:
-As a sighted user, I want polished visuals so the interface is readable and consistent.
-
-(could have) Auto-refresh of deck:
-As a player, I want the so I can keep playing long sessions.
-
-(could have) Wins/Losses/Ties scoreboard:
-As a player, I want the Wins/Losses/Ties scoreboard to persist across page reloads and be manually resettable.
-
-(must have) Responsiveness on all device sizes:
+Responsiveness on all device sizes:  
 As a player, I want responsive cards and panels so the UI fits any screen.
 
-(must have) Clear game layout:
+Clear game layout:  
 As a player, I want a clear game layout so that I can see dealer and player areas separately
 
-(should have) 404 error page:
-As a site owner, I want a 404 error page to be displayed in the event of a 404 error
-
-(could have) Favicon:
-As a player, I want a site favicon so the game looks polished in the browser tab.
-
-(must have)Display default dealer cards when game starts:
+Display default dealer cards when game starts:  
 As a player, I want to start a round with one hidden dealer card and two visible player cards.
 
-(must have) Hit button functionality:
+Hit button functionality:  
 As a player, I want to Hit to draw a new card while I haven’t busted.
 
-(must have) Rules of the game:
+Rules of the game:  
 As a new player, I want to click on a Rules button so that I can learn how to play the game
 
-(should have) Keyboard accessibility:
+Resetting the game:  
+As a player, I need clear controls including Reset so I can start a new round anytime.
+
+## Should have  
+
+Consistent and readable interface:  
+As a sighted user, I want polished visuals so the interface is readable and consistent.
+
+Keyboard accessibility:  
 As a player, I want keyboard accessibility to play without a mouse.
 
-(must have) Resetting the game:
-As a player, I need clear controls including Reset so I can start a new round anytime.
+## Could have
+
+Auto-refresh of deck:  
+As a player, I want the so I can keep playing long sessions.
+
+Wins/Losses/Ties scoreboard:  
+As a player, I want the Wins/Losses/Ties scoreboard to persist across page reloads and be manually resettable.
+
+404 error page:  
+As a site owner, I want a 404 error page to be displayed in the event of a 404 error
+
+Favicon:  
+As a player, I want a site favicon so the game looks polished in the browser tab.
 
 ### WIREFRAMES
 
@@ -118,19 +121,57 @@ Here is an image of the fonts chosen as a reference.
 ![Color Palette](assets/images/color-palette.png)  
 ![Color Palette 2](assets/images/Screenshot%202025-08-21%20at%2012.17.36.png)
 Colour palettte created using [Coolors](https://coolors.co/)
-### IMAGERY
-Use this section to explain what sort of imagery you plan to use through your site.
-
+A color scheme was chosen to reflect a physical BlackJack environment:  
+Green - from the felt of the playing area    
+Gold - for money / tokens used in play  
+Black - from the playing cards  
+Red - from the playing cards  
 
 ## FEATURES:
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
-This section can be used to explain what pages your site is made up of.
-Explain your features on the website,(navigation, pages, links, forms.....)
+
+![Screenshot of homepage](assets/images/features-1.png) 
+
+1. Favicon of card image
+
+2. Information icon - clicks to open modal
+
+3. Header with title
+
+4. Dealer area with cards
+
+5. Dealer running score
+
+6. Player area with cards
+
+7. Player running score
+
+8. Control buttons
+
+9. Game status message
+
+10. Score tally
+
+11. Footer with copyright information
+
+12. Link of footer to gamble support website that opens on another page
+
+13. 404 error message
+
+14. Modal with information on how to play game
+
+![Screenshot of modal](assets/images/features-2.png)  
+
+
 ### NAVIGATION
 ### FOOTER
 ### OTHER FEATURES
 ### FUTURE IMPLEMENTATIONS
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+
+1. Adding SPLIT functionality to the game
+
+2. Improvement - when player goes bust, dealer wins automatically without pulling more cards
+
+
 ### ACCESSIBILITY
 Be an amazing developer and get used to thinking about accessibility in all of your projects!
 his is the place to make a note of anything you have done with accessibility in mind. Some examples include:
@@ -159,15 +200,12 @@ CSS
 JavaScript  
 VS Code  
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
 ### LANGUAGES USED
 HTML
 CSS
 Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+
 ### FRAMEWORKS, LIBRARIES & PROGRAMS USED
-Add any frameworks, libraries or programs used while creating your project.
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
 Bootstrap
 Github
 
