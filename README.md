@@ -175,18 +175,20 @@ Footer contains copyright information and an external link to a gamble support w
 
 
 ### ACCESSIBILITY
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
-his is the place to make a note of anything you have done with accessibility in mind. Some examples include:
+Accessibility has been a key consideration throughout the development of this project. The following measures were taken to ensure the site is usable by as many people as possible:
 
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-e.g. 
-Using semantic HTML.
-Using descriptive alt attributes on images on the site.
-Providing information for screen readers where there are icons used and no text. This has been actioned in the footer of our project.
-Ensuring that there is a sufficient colour contrast throughout the site.
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
+- **Semantic HTML:** All content is structured using semantic HTML elements (e.g., `<header>`, `<main>`, `<section>`, `<footer>`, `<nav>`, `<button>`, `<h1>`-`<h4>`, `<p>`, etc.) to provide clear meaning and improve navigation for screen readers.
+- **Descriptive Alt Text:** All images include descriptive `alt` attributes so users with screen readers can understand the content and purpose of each image.
+- **Accessible Icons:** Icons used for actions (such as the information icon) include `aria-label` attributes to provide context for screen readers.
+- **Keyboard Navigation:** All interactive elements (buttons, links, modal dialogs) are accessible via keyboard navigation, ensuring users can play the game without a mouse.
+- **Color Contrast:** The color palette was chosen to provide sufficient contrast between text and background, meeting WCAG AA standards for readability.
+- **Accessible Fonts:** Fonts were selected for clarity and readability, including dyslexia-friendly sans-serif and serif options.
+- **Visible Focus States:** Default browser focus outlines are preserved to help keyboard users see which element is active.
+- **Responsive Design:** The layout adapts to all screen sizes, ensuring accessibility on mobile, tablet, and desktop devices.
+- **ARIA Live Regions:** Game status and score updates use `aria-live` attributes to announce changes to assistive technologies in real time.
+- **External Links:** External links (such as the gamble support website) open in a new tab and use `rel="noopener noreferrer"` for security and clarity.
+
+These practices help ensure the site is inclusive and usable for all players, regardless of ability or device.
 
 
 ## TECHNOLOGIES USED
