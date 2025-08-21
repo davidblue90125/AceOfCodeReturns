@@ -1,9 +1,11 @@
 # AceOfCodeReturns
-Add a Blurb about the site here, what does it do, why did you build it?
+We thought it would be fun to take a classic card game and build the game in browser for a Hackathon project. Blackjack was the perfect choice since it’s simple to learn, quick to play, and a great way to practice building something interactive. Our site lets you play against a dealer, hit or stand, reset score and see the outcome right away, just like at the table but in your browser.
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
+![Screenshot](assets/images/Screenshot%202025-08-21%20at%2011.00.01.png)
 
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
+[Here](https://ui.dev/amiresponsive?url=https://davidblue90125.github.io/AceOfCodeReturns/) is a link to the site showcased on different screensizes using amiresponsive!
+
+Find the link to the deployed site [here](https://davidblue90125.github.io/AceOfCodeReturns/)
 
 ---
 
@@ -47,9 +49,48 @@ Add a link to the live site here, for Milestone 1 this will be the GitHub Pages 
 
 ## DESIGN & PLANNING:
 ### USER STORIES
-Write your user stories in this section
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
+(must have) Stay button functionality:
+As a player, I want to Stay to stop drawing and let the dealer reveal and resolve the round.
+
+(must have) Immediate round outcome feedback (win/lose/tie) and updated totals:
+As a player, I want immediate round outcome feedback (win/lose/tie) and updated totals.
+
+(should have) Consistent and readable interface:
+As a sighted user, I want polished visuals so the interface is readable and consistent.
+
+(could have) Auto-refresh of deck:
+As a player, I want the so I can keep playing long sessions.
+
+(could have) Wins/Losses/Ties scoreboard:
+As a player, I want the Wins/Losses/Ties scoreboard to persist across page reloads and be manually resettable.
+
+(must have) Responsiveness on all device sizes:
+As a player, I want responsive cards and panels so the UI fits any screen.
+
+(must have) Clear game layout:
+As a player, I want a clear game layout so that I can see dealer and player areas separately
+
+(should have) 404 error page:
+As a site owner, I want a 404 error page to be displayed in the event of a 404 error
+
+(could have) Favicon:
+As a player, I want a site favicon so the game looks polished in the browser tab.
+
+(must have)Display default dealer cards when game starts:
+As a player, I want to start a round with one hidden dealer card and two visible player cards.
+
+(must have) Hit button functionality:
+As a player, I want to Hit to draw a new card while I haven’t busted.
+
+(must have) Rules of the game:
+As a new player, I want to click on a Rules button so that I can learn how to play the game
+
+(should have) Keyboard accessibility:
+As a player, I want keyboard accessibility to play without a mouse.
+
+(must have) Resetting the game:
+As a player, I need clear controls including Reset so I can start a new round anytime.
+
 ### WIREFRAMES
 
 ![Wireframe for Desktop](assets/images/wireframe-desktop.png) 
