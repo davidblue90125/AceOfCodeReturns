@@ -49,47 +49,53 @@ Find the link to the deployed site [here](https://davidblue90125.github.io/AceOf
 
 ## DESIGN & PLANNING:
 ### USER STORIES
-(must have) Stay button functionality:
+
+## Must have  
+Stay button functionality:  
 As a player, I want to Stay to stop drawing and let the dealer reveal and resolve the round.
 
-(must have) Immediate round outcome feedback (win/lose/tie) and updated totals:
+Immediate round outcome feedback (win/lose/tie) and updated totals:  
 As a player, I want immediate round outcome feedback (win/lose/tie) and updated totals.
 
-(should have) Consistent and readable interface:
-As a sighted user, I want polished visuals so the interface is readable and consistent.
-
-(could have) Auto-refresh of deck:
-As a player, I want the so I can keep playing long sessions.
-
-(could have) Wins/Losses/Ties scoreboard:
-As a player, I want the Wins/Losses/Ties scoreboard to persist across page reloads and be manually resettable.
-
-(must have) Responsiveness on all device sizes:
+Responsiveness on all device sizes:  
 As a player, I want responsive cards and panels so the UI fits any screen.
 
-(must have) Clear game layout:
+Clear game layout:  
 As a player, I want a clear game layout so that I can see dealer and player areas separately
 
-(should have) 404 error page:
-As a site owner, I want a 404 error page to be displayed in the event of a 404 error
-
-(could have) Favicon:
-As a player, I want a site favicon so the game looks polished in the browser tab.
-
-(must have)Display default dealer cards when game starts:
+Display default dealer cards when game starts:  
 As a player, I want to start a round with one hidden dealer card and two visible player cards.
 
-(must have) Hit button functionality:
+Hit button functionality:  
 As a player, I want to Hit to draw a new card while I haven’t busted.
 
-(must have) Rules of the game:
+Rules of the game:  
 As a new player, I want to click on a Rules button so that I can learn how to play the game
 
-(should have) Keyboard accessibility:
+Resetting the game:  
+As a player, I need clear controls including Reset so I can start a new round anytime.
+
+## Should have  
+
+Consistent and readable interface:  
+As a sighted user, I want polished visuals so the interface is readable and consistent.
+
+Keyboard accessibility:  
 As a player, I want keyboard accessibility to play without a mouse.
 
-(must have) Resetting the game:
-As a player, I need clear controls including Reset so I can start a new round anytime.
+## Could have
+
+Auto-refresh of deck:  
+As a player, I want the so I can keep playing long sessions.
+
+Wins/Losses/Ties scoreboard:  
+As a player, I want the Wins/Losses/Ties scoreboard to persist across page reloads and be manually resettable.
+
+404 error page:  
+As a site owner, I want a 404 error page to be displayed in the event of a 404 error
+
+Favicon:  
+As a player, I want a site favicon so the game looks polished in the browser tab.
 
 ### WIREFRAMES
 
