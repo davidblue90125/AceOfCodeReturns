@@ -1,21 +1,3 @@
-
-/**
- * Blackjack — Single Page App
- * MUST + SHOULD features:
- * - Responsive UI, Hit/Stay, dealer draws to 17, running hand totals
- * - Natural Blackjack (two-card 21) pays +2 wins
- * - Reset round, keyboard H/S/R
- * - Scoreboard (wins/losses/ties) visible & persisted with Reset Score control
- * - Instructions + Gamble Aware link (in HTML)
- *
- * Folder structure:
- *  index.html
- *  assets/css/style.css
- *  assets/js/script.js
- *  assets/images/favicon.png
- *  assets/cards/[cardname].png  (incl. BACK.png)
- */
-
 "use strict";                           // Enforce stricter JS parsing/rules (catches silent errors).
 
 /* ---------- State ---------- */
@@ -90,10 +72,29 @@ window.addEventListener("load", () => {        // Run after the page finishes lo
     saveScore();                                // Persist the reset.
   });
 
-  // Keyboard shortcuts: H / S / R
+  // Keyboard shortcuts: H / S / R / E
   document.addEventListener("keydown", (e) => { // Global key handler for accessibility/speed.
     const k = e.key.toLowerCase();              // Normalize key to lowercase.
-    if (k === "h" && !hitBtn.disabled) onHit(); // H acts like clicking Hit (if enabled).
+    
+    // E: reset scoreboard
+if (k === "e" && !resetScoreBtn.disabled) {
+  if (document.activeElement === resetScoreBtn) {
+    e.preventDefault(); // avoid double-activation when the button is focused
+  }
+  wins = losses = ties = 0;
+  updateTally();
+  saveScore();
+  resultsEl.textContent = "Scoreboard reset.";
+  return;
+}
+    
+    if (k === "h" && !hitBtn.disabled) {
+        if (document.activeElement === hitBtn) {
+          e.preventDefault(); // Prevent button's default click on keypress
+        }
+        onHit(); // Always call onHit only once
+        return;
+      }
     if (k === "s" && !stayBtn.disabled) onStay(); // S acts like clicking Stay (if enabled).
     if (k === "r") newRound();                  // R always starts a new round.
   });
@@ -128,16 +129,12 @@ function newRound() {                           // Prepare and deal a brand-new 
   dealerAceCount += checkAce(hidden);           // Track if the card is an Ace.
   dealerCardCount++;                            // Count a dealer card dealt.
 
-  // Dealer draws face-up to 17+
-  while (reduceAce(dealerSum, dealerAceCount) < 17) { // While best total is below 17…
-    const card = deck.pop();                    // Draw a face-up card.
-    dealerSum += getValue(card);                // Add its nominal value.
-    dealerAceCount += checkAce(card);           // Track aces for later reduction.
-    dealerCardCount++;                          // Count another dealer card.
-    dealerCardsEl.appendChild(                   // Render the face-up card in the dealer’s area.
-      makeCardImg(card, "Dealer card")
-    );
-  }
+// American- dealer starts with 2 cards (1 hidden + 1 upcard), then stops.
+const upcard = deck.pop();
+dealerSum += getValue(upcard);
+dealerAceCount += checkAce(upcard);
+dealerCardCount++;
+dealerCardsEl.appendChild(makeCardImg(upcard, "Dealer upcard"));
 
   // Player initial two
   for (let i = 0; i < 2; i++) drawToPlayer();   // Deal two cards to the player (rendered).
@@ -189,6 +186,17 @@ function concludeRound() {                        // Reveal hidden card, finaliz
   hiddenImg.src = getCardImageSrc(hidden);        // Flip the dealer’s hidden image to the real card face.
   hiddenImg.alt = cardAlt(hidden);                // Update alt text to the actual card name.
 
+  // After player reveal & stay, dealer plays face-up to 17+
+  while (reduceAce(dealerSum, dealerAceCount) < 17) { // While best total is below 17…
+    const card = deck.pop();                    // Draw a face-up card.
+    dealerSum += getValue(card);                // Add its nominal value.
+    dealerAceCount += checkAce(card);           // Track aces for later reduction.
+    dealerCardCount++;                          // Count another dealer card.
+    dealerCardsEl.appendChild(                   // Render the face-up card in the dealer’s area.
+      makeCardImg(card, "Dealer card")
+    );
+  }
+
   // Final totals
   dealerSum = reduceAce(dealerSum, dealerAceCount); // Convert aces 11→1 as needed for dealer.
   yourSum = reduceAce(yourSum, yourAceCount);       // Convert aces 11→1 as needed for player.
@@ -234,7 +242,12 @@ function setControls({ hit, stay, reset }) {      // Enable/disable control butt
 
 function updateSums(showDealer = false) {          // Update sum displays (dealer hidden until reveal).
   yourSumEl.textContent = reduceAce(yourSum, yourAceCount); // Show best player total.
-  dealerSumEl.textContent = showDealer ? reduceAce(dealerSum, dealerAceCount) : ""; // Show or hide dealer total.
+  // Defensive: if dealerSumEl exists, update it; else warn in console
+  if (dealerSumEl) {
+    dealerSumEl.textContent = showDealer ? reduceAce(dealerSum, dealerAceCount) : "";
+  } else {
+    console.warn("Dealer sum element (#dealer-sum) not found in the DOM.");
+  }
 }
 
 /* ---------- Deck & Cards ---------- */

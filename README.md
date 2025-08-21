@@ -90,7 +90,11 @@ Resetting the game:
 As a player, I need clear controls including Reset so I can start a new round anytime.
 
 ### WIREFRAMES
-Attach wireframes in this section, Link or pictures
+
+![Wireframe for Desktop](assets/images/wireframe-desktop.png) 
+
+![Wireframe for Mobile](assets/images/wireframe-mobile.png) 
+
 ### TYPOGRAPHY
 Explain font you've used for your project
 If you've imported fonts to use in your project, add some information about them here. You can include information like:
@@ -101,9 +105,9 @@ What weights have you included?
 
 I also like to include an image of the fonts chosen as a reference.
 ### COLOUR SCHEME
-Screenshot of the colour scheme for your project
-Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
-I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
+
+![Color Palette](assets/images/color-palette.png)  
+
 ### IMAGERY
 Use this section to explain what sort of imagery you plan to use through your site.
 
