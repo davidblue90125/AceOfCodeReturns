@@ -18,6 +18,9 @@
 
         <!-- JAVASCRIPT LINK -->
         <script defer src="assets/js/script.js"></script>
+
+
+
     </head>
 
 
@@ -31,7 +34,7 @@
                 <i class="fa-sharp fa-solid fa-circle-info fs-1 icon-modal" role="button" data-bs-toggle="modal" data-bs-target="#rulesmodal" aria-label="Open rules modal"></i>
 
                 <!-- TITLE CENTER -->
-                <h1 class="m-0 text-center">BlackJack</h1>
+                <h1 id="textborder" class="m-0 text-center"> <i class="fa-solid fa-diamond"></i>  BlackJack  <i class="fa-solid fa-diamond"></i></h1>
 
             </div>
         </header>
@@ -70,17 +73,19 @@
                 <section class="col-12" aria-label="Controls and game status">
                     <div class="card bg-gradient-dark shadow rounded-4 p-3 text-center">
                         <!-- Game buttoms -->
+
+                        <div id="gamebuttons">
+                            <button id="hit">Hit</button>
+                            <button id="stay">Stay</button>
+                            <button id="reset">Reset</button>
+                            <button id="resetScore">Reset Score</button>
                         <div>
-                            <button id="hit"><b>H</b>it</button>
-                            <button id="stay"><b>S</b>tay</button>
-                            <button id="reset"><b>R</b>eset</button>
-                            <button id="resetScore">r<b>E</b>start</button>
-                        </div>
+
 
                         <!-- Tally -->
                         <p id="results" class="fs-5 min-h-1" aria-live="assertive" role="status"></p>
 
-                        <p id="tally" class="text-secondary m-0" aria-live="polite">
+                        <p id="tally" class="m-0" aria-live="polite">
                             Wins: <span id="wins">0</span> •
                             Losses: <span id="losses">0</span> •
                             Ties: <span id="ties">0</span>
@@ -141,7 +146,10 @@
 
 
         <!-- FOOTER -->
-        <footer class="text-center text-secondary pb-4" role="contentinfo">Footer Content</footer>
+        <footer class="text-center text-secondary pb-4 align-items-center
+        " role="contentinfo">
+            <p>&copy; 2025 AceOfCodes. All rights reserved.</p>
+        </footer>
 
         <!-- FONT AWESOME LINK-->
         <script src="https://kit.fontawesome.com/f082230656.js" crossorigin="anonymous"></script>
