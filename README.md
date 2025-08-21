@@ -98,7 +98,18 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 
 ## TECHNOLOGIES USED
-List of technologies used for your project...
+
+favicon.io
+Canva
+GitHub project boards
+GitHub version control
+Bootstrap
+Font Awesome
+HTML5
+CSS
+JavaScript
+VS Code
+
 👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
 ### LANGUAGES USED
 HTML
