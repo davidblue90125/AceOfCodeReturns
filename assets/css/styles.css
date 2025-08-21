@@ -25,7 +25,7 @@ main {
    flex: 1 0 auto;
    background: none;
    width: auto;
-   margin: 0 auto;
+   margin: clamp(1.5rem, 4vw, 3rem) auto 0 auto;
 }
 
 /* 3. TYPOGRAPHY */
@@ -47,11 +47,36 @@ h1, .icon-modal {
 }
 
 header h1 {
-   font-size: clamp(2.5rem, 6vw, 5rem);
-   line-height: 1.1;
+   font-size: clamp(2.2rem, 7vw, 5rem);
+    line-height: 1.1;
+    z-index: 1;
 }
 
-h4 {
+@media (min-width: 576px) {
+   header h1 {
+      font-size: clamp(2.8rem, 7vw, 6rem);
+   }
+}
+
+@media (min-width: 992px) {
+   header h1 {
+      font-size: clamp(3.5rem, 6vw, 7rem);
+   }
+}
+
+/* Fix icon and h1 overlap in header */
+header .d-flex.align-items-center {
+   gap: 2.5rem;
+}
+}
+
+.icon-modal {
+   position: static;
+   margin-right: 0.5rem;
+   z-index: 2;
+}
+
+h2, h4 {
    font-family: "Quando", serif;
    font-weight: 400;
    font-style: normal;
@@ -72,7 +97,7 @@ header {
 .icon-modal {
    position: absolute;
    left: 0;
-   translate: 7px -10px;
+   translate: 9px -7px;
    cursor: pointer;
    color: #e6b055;
 }
