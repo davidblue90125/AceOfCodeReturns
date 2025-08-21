@@ -129,16 +129,12 @@ function newRound() {                           // Prepare and deal a brand-new 
   dealerAceCount += checkAce(hidden);           // Track if the card is an Ace.
   dealerCardCount++;                            // Count a dealer card dealt.
 
-  // Dealer draws face-up to 17+
-  while (reduceAce(dealerSum, dealerAceCount) < 17) { // While best total is below 17…
-    const card = deck.pop();                    // Draw a face-up card.
-    dealerSum += getValue(card);                // Add its nominal value.
-    dealerAceCount += checkAce(card);           // Track aces for later reduction.
-    dealerCardCount++;                          // Count another dealer card.
-    dealerCardsEl.appendChild(                   // Render the face-up card in the dealer’s area.
-      makeCardImg(card, "Dealer card")
-    );
-  }
+// American- dealer starts with 2 cards (1 hidden + 1 upcard), then stops.
+const upcard = deck.pop();
+dealerSum += getValue(upcard);
+dealerAceCount += checkAce(upcard);
+dealerCardCount++;
+dealerCardsEl.appendChild(makeCardImg(upcard, "Dealer upcard"));
 
   // Player initial two
   for (let i = 0; i < 2; i++) drawToPlayer();   // Deal two cards to the player (rendered).
@@ -189,6 +185,17 @@ function concludeRound() {                        // Reveal hidden card, finaliz
   // Reveal dealer hidden card
   hiddenImg.src = getCardImageSrc(hidden);        // Flip the dealer’s hidden image to the real card face.
   hiddenImg.alt = cardAlt(hidden);                // Update alt text to the actual card name.
+
+  // After player reveal & stay, dealer plays face-up to 17+
+  while (reduceAce(dealerSum, dealerAceCount) < 17) { // While best total is below 17…
+    const card = deck.pop();                    // Draw a face-up card.
+    dealerSum += getValue(card);                // Add its nominal value.
+    dealerAceCount += checkAce(card);           // Track aces for later reduction.
+    dealerCardCount++;                          // Count another dealer card.
+    dealerCardsEl.appendChild(                   // Render the face-up card in the dealer’s area.
+      makeCardImg(card, "Dealer card")
+    );
+  }
 
   // Final totals
   dealerSum = reduceAce(dealerSum, dealerAceCount); // Convert aces 11→1 as needed for dealer.
