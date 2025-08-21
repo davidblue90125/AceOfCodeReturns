@@ -45,54 +45,45 @@ Find the link to the deployed site [here](https://davidblue90125.github.io/AceOf
 
 
 ## DESIGN & PLANNING:
-### USER STORIES
 
-## Must have  
-Stay button functionality:  
-As a player, I want to Stay to stop drawing and let the dealer reveal and resolve the round.
+### User Stories
 
-Immediate round outcome feedback (win/lose/tie) and updated totals:  
-As a player, I want immediate round outcome feedback (win/lose/tie) and updated totals.
+#### Must Have
 
-Responsiveness on all device sizes:  
-As a player, I want responsive cards and panels so the UI fits any screen.
+- **Stay button functionality:**  
+  As a player, I want to Stay to stop drawing and let the dealer reveal and resolve the round.
+- **Immediate round outcome feedback (win/lose/tie) and updated totals:**  
+  As a player, I want immediate round outcome feedback (win/lose/tie) and updated totals.
+- **Responsiveness on all device sizes:**  
+  As a player, I want responsive cards and panels so the UI fits any screen.
+- **Clear game layout:**  
+  As a player, I want a clear game layout so that I can see dealer and player areas separately.
+- **Display default dealer cards when game starts:**  
+  As a player, I want to start a round with one hidden dealer card and two visible player cards.
+- **Hit button functionality:**  
+  As a player, I want to Hit to draw a new card while I haven’t busted.
+- **Rules of the game:**  
+  As a new player, I want to click on a Rules button so that I can learn how to play the game.
+- **Resetting the game:**  
+  As a player, I need clear controls including Reset so I can start a new round anytime.
 
-Clear game layout:  
-As a player, I want a clear game layout so that I can see dealer and player areas separately
+#### Should Have
 
-Display default dealer cards when game starts:  
-As a player, I want to start a round with one hidden dealer card and two visible player cards.
+- **Consistent and readable interface:**  
+  As a sighted user, I want polished visuals so the interface is readable and consistent.
+- **Keyboard accessibility:**  
+  As a player, I want keyboard accessibility to play without a mouse.
 
-Hit button functionality:  
-As a player, I want to Hit to draw a new card while I haven’t busted.
+#### Could Have
 
-Rules of the game:  
-As a new player, I want to click on a Rules button so that I can learn how to play the game
-
-Resetting the game:  
-As a player, I need clear controls including Reset so I can start a new round anytime.
-
-## Should have  
-
-Consistent and readable interface:  
-As a sighted user, I want polished visuals so the interface is readable and consistent.
-
-Keyboard accessibility:  
-As a player, I want keyboard accessibility to play without a mouse.
-
-## Could have
-
-Auto-refresh of deck:  
-As a player, I want the so I can keep playing long sessions.
-
-Wins/Losses/Ties scoreboard:  
-As a player, I want the Wins/Losses/Ties scoreboard to persist across page reloads and be manually resettable.
-
-404 error page:  
-As a site owner, I want a 404 error page to be displayed in the event of a 404 error
-
-Favicon:  
-As a player, I want a site favicon so the game looks polished in the browser tab.
+- **Auto-refresh of deck:**  
+  As a player, I want the so I can keep playing long sessions.
+- **Wins/Losses/Ties scoreboard:**  
+  As a player, I want the Wins/Losses/Ties scoreboard to persist across page reloads and be manually resettable.
+- **404 error page:**  
+  As a site owner, I want a 404 error page to be displayed in the event of a 404 error.
+- **Favicon:**  
+  As a player, I want a site favicon so the game looks polished in the browser tab.
 
 ### WIREFRAMES
 
@@ -216,6 +207,7 @@ Coolors
 ## TESTING
 
 ### Google's Lighthouse Performance
+
 #### Mobile Results
 ![Mobile Image](/assets/images/Screenshot%202025-08-21%20at%2013.08.30.png)
 
@@ -266,9 +258,12 @@ No browser compatability issues
 ![screen 3](assets/images/Screenshot%202025-08-21%20at%2013.35.18.png)
 
 ### Code Validation
-#### W3 HTML Validator:
+
+#### W3 HTML Validator:
+
+W3 Validation carried out and errors were identified.
 ![W3 Results](assets/images/Screenshot%202025-08-21%20at%2013.50.57.png)
-W3 Validation performed and errors were identified. A div in one of the sections was not closed, causing these errors, once this bug was fixed the warnings resolved. 
+ A `<div>` in one of the sections was not closed, causing these errors, once this bug was fixed the warnings resolved. 
 
 
 #### CSS Jigsaw Validator:
@@ -278,27 +273,27 @@ No Errors found using the W3C CSS validation tool
 
 ## BUGS
 ### Header and Footer Styling Issues
-Fixed in commit c653c01 and cd963d8
-Refactored header and footer styles for better accessibility and visual consistency.
+- Fixed in commit c653c01 and cd963d8
+- Refactored header and footer styles for better accessibility and visual consistency.
 
 ### Dealer and Player Area Layout
-Fixed in commit fc3ef4f and f751fc5
-Removed unnecessary Bootstrap grid classes and centered player cards for improved layout.
+- Fixed in commit fc3ef4f and f751fc5
+- Removed unnecessary Bootstrap grid classes and centered player cards for improved layout.
 
 ### Tally Text Color Visibility
-Fixed in commit 067ddf6
-Updated tally text color to aliceblue for better contrast and readability.
+- Fixed in commit 067ddf6
+- Updated tally text color to aliceblue for better contrast and readability.
 
-### Dealer Score Display
-Fixed in commit 6de0482
-Added code to display the dealer's score correctly.
+### Dealer Score Display
+- Fixed in commit 6de0482
+- Added code to display the dealer's score correctly.
 
 ### Game Button Functionality
-Fixed in commit 5ae04b4
-Amended hit button code so that only one card is dealt per click.
+- Fixed in commit 5ae04b4
+- Amended hit button code so that only one card is dealt per click.
 
-### Unclosed <div> in Game Buttons Section
-Closed an unclosed <div> in the game buttons section of index.html to resolve HTML validation errors and prevent layout issues.
+### Unclosed `<div>` in Game Buttons Section
+- Closed an unclosed `<div>` in the game buttons section of index.html to resolve HTML validation errors and prevent layout issues.
 
 
 
