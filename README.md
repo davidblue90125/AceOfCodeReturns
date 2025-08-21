@@ -225,7 +225,14 @@ No browser compatability issues
 ![screen 3](assets/images/Screenshot%202025-08-21%20at%2013.35.18.png)
 
 ### Code Validation
-Validate your code HTML, CSS (all pages/files need to be validated!!!), display screenshots
+#### W3 HTML Validator:
+![W3 Results](assets/images/Screenshot%202025-08-21%20at%2013.50.57.png)
+W3 Validation performed and errors were identified. A div in one of the sections was not closed, causing these errors, once this bug was fixed the warnings resolved. 
+
+
+#### CSS Jigsaw Validator:
+No Errors found using the W3C CSS validation tool 
+
 ### Manual Testing user stories or/and features
 Test all your user stories, you an create table 
 User Story |  Test | Pass
