@@ -139,7 +139,18 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 
 ## TECHNOLOGIES USED
-List of technologies used for your project...
+
+favicon.io  
+Canva  
+GitHub project boards  
+GitHub version control  
+Bootstrap  
+Font Awesome  
+HTML5  
+CSS  
+JavaScript  
+VS Code  
+
 👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
 ### LANGUAGES USED
 HTML
@@ -195,13 +206,11 @@ The site was deployed to Github Pages using the following method:
 ### LOCAL DEVELOPMENT
 The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
 
-
-
-
 ## CREDITS
-List of used resources for your website (text, images, snippets of code, projects....)
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
-The Credits section is where you can credit all the people and sources you used throughout your project.
+
+YouTube video tutorial: https://www.youtube.com/watch?v=bMYCWccL-3U  
+Card images: https://github.com/ImKennyYip/black-jack
+
 ### CODE USED
 If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
   - Code & Text Content
