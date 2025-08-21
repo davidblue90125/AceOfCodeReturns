@@ -201,6 +201,7 @@ HTML5
 CSS  
 JavaScript  
 VS Code  
+ChatGPT-5
 
 ### LANGUAGES USED
 HTML
@@ -306,16 +307,4 @@ The local development section gives instructions on how someone else could make 
 
 YouTube video tutorial: https://www.youtube.com/watch?v=bMYCWccL-3U  
 Card images: https://github.com/ImKennyYip/black-jack
-
-### CODE USED
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
-  - Code & Text Content
-### CONTENT
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
-### MEDIA
-  - Media
-  If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
-### ACKNOWLEDGMENTS  
-  - Acknowledgment
-  If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
-
+ChatGPT-5: for code snippet generation and debugging
