@@ -51,7 +51,11 @@ Write your user stories in this section
 👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
 Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
 ### WIREFRAMES
-Attach wireframes in this section, Link or pictures
+
+![Wireframe for Desktop](assets/images/wireframe-desktop.png) 
+
+![Wireframe for Mobile](assets/images/wireframe-mobile.png) 
+
 ### TYPOGRAPHY
 Explain font you've used for your project
 If you've imported fonts to use in your project, add some information about them here. You can include information like:
@@ -62,9 +66,9 @@ What weights have you included?
 
 I also like to include an image of the fonts chosen as a reference.
 ### COLOUR SCHEME
-Screenshot of the colour scheme for your project
-Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
-I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
+
+![Color Palette](assets/images/color-palette.png)  
+
 ### IMAGERY
 Use this section to explain what sort of imagery you plan to use through your site.
 
