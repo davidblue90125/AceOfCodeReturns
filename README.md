@@ -301,13 +301,13 @@ Closed an unclosed <div> in the game buttons section of index.html to resolve HT
 
 
 ## DEPLOYMENT
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+### Creating Repository on GitHub
+The repository was created on GitHub using the following method:
+- Go to the [home](https://github.com/dashboard) section on GitHub.
+- Click on + in the top right corner and select new repository from the drop-down. 
+- Enter a name for the repository and click Create repository.
 
-#### Creating Repository on GitHub
-- First make sure you are signed into [Github](https://github.com/) and go to the code institutes template, which can be found [here](https://github.com/Code-Institute-Org/gitpod-full-template).
-- Then click on **use this template** and select **Create a new repository** from the drop-down. Enter the name for the repository and click **Create repository from template**.
-- Once the repository was created, I clicked the green **gitpod** button to create a workspace in gitpod so that I could write the code for the site.
-#### Deloying on Github
+### Deloying on Github
 The site was deployed to Github Pages using the following method:
 - Go to the Github repository.
 - Navigate to the 'settings' tab.
@@ -315,7 +315,20 @@ The site was deployed to Github Pages using the following method:
 - Click 'save'.
 
 ### LOCAL DEVELOPMENT
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
+To make a copy of this project and run it locally:
+- Go to the [GitHub repository](https://github.com/davidblue90125/AceOfCodeReturns).
+- Click the green **Code** button and select **Download ZIP** to download the project files, or copy the URL under **Clone** to use with Git.
+- If using Git, open your terminal and run:
+  ```
+  git clone https://github.com/davidblue90125/AceOfCodeReturns.git
+  ```
+- Navigate into the project directory:
+  ```
+  cd AceOfCodeReturns
+  ```
+- Open the `index.html` file in your browser to play the game locally.
+
+No additional setup is required for basic play. If you want to make changes, you can edit the files in your favorite code editor (such as VS Code).
 
 ## CREDITS
 
