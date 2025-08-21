@@ -191,25 +191,24 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 ## TECHNOLOGIES USED
 
+### LANGUAGES USED
+HTML
+CSS
+JavaScript
+
+### FRAMEWORKS, LIBRARIES & PROGRAMS USED
+Bootstrap
 favicon.io  
 Canva  
 GitHub project boards  
-GitHub version control  
-Bootstrap  
+GitHub version control   
 Font Awesome  
 HTML5  
 CSS  
 JavaScript  
 VS Code  
-
-### LANGUAGES USED
-HTML
-CSS
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
-
-### FRAMEWORKS, LIBRARIES & PROGRAMS USED
-Bootstrap
-Github
+Font Joy
+Coolors
 
 
 ## TESTING
@@ -273,16 +272,32 @@ W3 Validation performed and errors were identified. A div in one of the sections
 #### CSS Jigsaw Validator:
 No Errors found using the W3C CSS validation tool 
 
-### Manual Testing user stories or/and features
-Test all your user stories, you an create table 
-User Story |  Test | Pass
---- | --- | :---:
-paste here you user story | what is visible to the user and what action they should perform | &check;
-- and attach screenshot
 
 
 ## BUGS
-List of bugs and how did you fix them
+### Header and Footer Styling Issues
+Fixed in commit c653c01 and cd963d8
+Refactored header and footer styles for better accessibility and visual consistency.
+
+### Dealer and Player Area Layout
+Fixed in commit fc3ef4f and f751fc5
+Removed unnecessary Bootstrap grid classes and centered player cards for improved layout.
+
+### Tally Text Color Visibility
+Fixed in commit 067ddf6
+Updated tally text color to aliceblue for better contrast and readability.
+
+### Dealer Score Display
+Fixed in commit 6de0482
+Added code to display the dealer's score correctly.
+
+### Game Button Functionality
+Fixed in commit 5ae04b4
+Amended hit button code so that only one card is dealt per click.
+
+### Unclosed <div> in Game Buttons Section
+Closed an unclosed <div> in the game buttons section of index.html to resolve HTML validation errors and prevent layout issues.
+
 
 
 ## DEPLOYMENT
