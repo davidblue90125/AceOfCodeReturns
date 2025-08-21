@@ -123,7 +123,7 @@ function newRound() {                           // Prepare and deal a brand-new 
     shuffleDeck();                              // …shuffle it with Fisher–Yates.
   }
 
-  // Dealer hidden
+  // Dealer initial two cards: one hidden, one face-up
   hidden = deck.pop();                          // Take one card for the dealer (kept hidden).
   dealerSum += getValue(hidden);                // Add its nominal value (Ace=11 for now).
   dealerAceCount += checkAce(hidden);           // Track if the card is an Ace.
